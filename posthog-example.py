@@ -1,9 +1,8 @@
 import posthog
-from secret import posthost_api_key
 from time import sleep
 
 # Substitutes posthog.api_key which still exists but has been deprecated
-posthog.project_api_key = posthost_api_key
+posthog.project_api_key = <your Project API Key here.. Find on Project Settings of Posthog >
 
 posthog.debug = True
 
